@@ -39,7 +39,7 @@ body {
   margin: 0;
   padding: 0;
   background:
-    radial-gradient(circle at top, rgba(255, 54, 122, 0.15), transparent 35%),
+    radial-gradient(circle at top, rgba(255, 54, 122, 0.15),  transparent 35%),
     radial-gradient(circle at 35% 5%, rgba(92, 123, 255, 0.3), transparent 45%),
     var(--bg);
   color: var(--text);
@@ -473,6 +473,7 @@ main .section:nth-of-type(3n + 3) {
 .analytics .panel {
   padding: 1rem;
   background: rgba(43, 46, 53, 0.501);
+  opacity: 0.75;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
