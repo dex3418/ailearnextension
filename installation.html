@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="AI Learning Growth Tracker" />
+  <meta name="description" content="Step-by-step Developer Mode installation instructions for the AI Learning Growth Tracker Chrome extension." />
+  <meta name="keywords" content="AI Learning Growth Tracker installation, Chrome extension install, developer mode, load unpacked, AI study tracker" />
+  <meta property="og:title" content="Install AI Learning Growth Tracker" />
+  <meta property="og:description" content="Load the production build of AI Learning Growth Tracker, pin the extension, and open the persistent Side Panel in Chrome." />
+  <meta property="og:type" content="website" />
+  <title>Install · AI Learning Growth Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <div class="logo">AI Learning Growth Tracker</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="system-status.html">System Status</a>
+        <a href="setup.html">API &amp; Database</a>
+        <a href="side-panel.html">Side Panel</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero">
+      <div class="container">
+        <p class="eyebrow">Developer Installation</p>
+        <h1>Install the AI Learning Growth Tracker Extension</h1>
+        <p class="lead">Load the production build directly from Chrome by pointing the extension loader at the compiled <code>dist/</code> folder.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Installation Steps</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>Step 1</span>
+            <p><strong>Open Google Chrome</strong> and navigate to <code>chrome://extensions/</code>.</p>
+          </article>
+          <article class="timeline-item">
+            <span>Step 2</span>
+            <p>Toggle <strong>Developer Mode</strong> in the top-right to expose actions like Load unpacked.</p>
+          </article>
+          <article class="timeline-item">
+            <span>Step 3</span>
+            <p>Click <strong>Load unpacked</strong> and select the <code>dist/</code> folder that contains the production build (not the root project folder).</p>
+          </article>
+          <article class="timeline-item">
+            <span>Step 4</span>
+            <p>Pin the extension by opening the Chrome extensions menu (🧩), finding <em>AI Learning Growth Tracker</em>, and clicking the pin icon.</p>
+          </article>
+          <article class="timeline-item">
+            <span>Step 5</span>
+            <p>Click the extension icon and choose <strong>Open Side Panel</strong> so the tracker is always accessible while you browse.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Updating the Extension</h2>
+        <p>After changing the code, reload the extension at <code>chrome://extensions/</code> by clicking the <strong>Reload</strong> button on the extension card. No reinstall is necessary.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Important Notes</h2>
+        <ul class="check-list compact">
+          <li><strong>manifest.json</strong> and all assets must stay inside <code>dist/</code>.</li>
+          <li>The extension uses <strong>Manifest V3</strong> for modern Chromium compliance.</li>
+          <li>No backend setup is required; API keys are entered through the UI.</li>
+          <li>Local storage keeps keys encrypted and secure.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Installation Complete</h2>
+        <ul class="clean-list">
+          <li>Browser-level AI Learning Tracker is active.</li>
+          <li>Persistent Side Panel stays visible as you study.</li>
+          <li>Secure in-app API configuration is available.</li>
+          <li>Optional Supabase sync can be configured later.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="system-status.html">System Status</a>
+        <a href="setup.html">API &amp; Database</a>
+        <a href="side-panel.html">Side Panel</a>
+      </nav>
+      <p>Installation guide • Chrome Developer Mode</p>
+    </div>
+  </footer>
+</body>
+</html>

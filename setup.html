@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="AI Learning Growth Tracker" />
+  <meta name="description" content="Configure Gemini AI and Supabase credentials inside the AI Learning Growth Tracker Chrome extension without touching code." />
+  <meta name="keywords" content="Gemini AI setup, Supabase, API keys, AI Learning Growth Tracker, browser extension configuration" />
+  <meta property="og:title" content="API & Database Setup · AI Learning Growth Tracker" />
+  <meta property="og:description" content="Enter, validate, and store Gemini API and Supabase credentials directly from the extension settings for secure cloud sync." />
+  <meta property="og:type" content="website" />
+  <title>API &amp; Database Setup · AI Learning Growth Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <div class="logo">AI Learning Growth Tracker</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="system-status.html">System Status</a>
+        <a href="installation.html">Installation</a>
+        <a href="side-panel.html">Side Panel</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero">
+      <div class="container">
+        <p class="eyebrow">API &amp; Database</p>
+        <h1>Securely Configure Gemini &amp; Supabase</h1>
+        <p class="lead">No backend editing required—enter keys through the extension UI and let the app validate and persist them locally.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Gemini AI Setup (Required)</h2>
+        <p>The extension relies on Gemini 2.5 Flash for content processing, question generation, and evaluation.</p>
+        <ol class="clean-list">
+          <li>Visit <code>aistudio.google.com</code>, sign in, and create a Gemini API key.</li>
+          <li>Open the extension dashboard → Settings.</li>
+          <li>Paste the Gemini key into the <strong>Gemini AI – API Key</strong> field and save.</li>
+          <li>The UI validates the key, stores it securely in Chrome storage, and unlocks AI analysis.</li>
+        </ol>
+        <p class="muted">Invalid keys prompt a clear error so users can retry without guessing.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Supabase Setup (Optional for Cloud Sync)</h2>
+        <p>Enable Supabase for cloud storage, device sync, and scalable analytics.</p>
+        <ol class="clean-list">
+          <li>Sign up at <code>supabase.com</code> and create a new project.</li>
+          <li>From Project Settings → API, copy your Project URL and Anon Public Key.</li>
+          <li>In the extension Settings, paste both values, save, and allow the system to validate.</li>
+          <li>The app confirms the connection and registers a device ID for syncing future data.</li>
+        </ol>
+        <p class="emphasis">Without Supabase, the extension still tracks locally, but cloud features remain locked.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Security Design</h2>
+        <ul class="check-list compact">
+          <li>Chrome local storage retains all keys; nothing is hardcoded.</li>
+          <li>Supabase uses anon keys with Row Level Security policies.</li>
+          <li>User-controlled configuration eliminates external servers.</li>
+          <li>The app validates every key before enabling the corresponding mode.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>System Modes</h2>
+        <ul class="clean-list">
+          <li><strong>Local Mode</strong>: Gemini configured, Supabase disabled. AI analysis runs locally.</li>
+          <li><strong>Cloud Mode</strong>: Both Gemini and Supabase configured. Full sync and analytics.</li>
+          <li><strong>Basic Mode</strong>: Neither configured. Manual tracking only.</li>
+        </ul>
+        <p class="muted">Start in local mode while you gather Supabase credentials, then switch to cloud mode when ready.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="system-status.html">System Status</a>
+        <a href="installation.html">Installation</a>
+        <a href="side-panel.html">Side Panel</a>
+      </nav>
+      <p>Configuration guide • Secure key storage</p>
+    </div>
+  </footer>
+</body>
+</html>
